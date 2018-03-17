@@ -1,1 +1,63 @@
+public class Recipe{
+
+private String recipeName;
+private Ingredient[] ingredients;
+private double pricePerServing;
+private String recipe
+
+public Recipe (String ingredientName, Ingredients[] ingredients, double pricePerServing, String recipe){
+
+this.recipeName=recipeName;
+this.ingredients[]=ingredients;
+this.pricePerServing=pricePerServing;
+this.recipe=recipe;
+}
+
+public String getRecipeName(){
+	return recipeName;
+	}
+
+public double getPricePerServing(){
+	return pricePerServing;
+	}
+
+public Ingredients[] getIngredients(){
+	return ingredients;
+	}
+
+public String getRecipeInstructions(){
+	return recipe;
+	}
+
+public boolean containsIngredient(Ingredient i){
+	for(int p=0; p<ingredients.length; p++){
+		if(i.getIngredientName().equals(p.getIngredientName() ){
+			return true;
+			}
+		}
+	return false;
+	}
+
+public String getIngredientsString(){
+	String s = ingredients[0].getIngredientName();
+	for (int i = 0; i<ingredients.length; i++){
+		String s = s + ", " + ingredients[i].getIngredientName();
+		}
+	return s;
+	}
+
+public String toString (){
+	String s = recipeName + ", " + getPricePerServing() + ":-/port : " + getIngredientsString();
+	return s;
+	}
+
+public boolean equals(Recipe r){
+	if(r.getRecipeName.equals(recipeName) && r.getPricePerServing=pricePerServing && 
+		r.getIngredients.equals(ingredients) ){
+		return true;
+		}
+	else return false;
+	}
+
+}
 
