@@ -1,0 +1,34 @@
+public class Ingredient {
+
+private String ingredientName;
+private double amount;
+private String unit;
+
+public Ingredient (String ingredientName, double amount, String unit){
+
+this.ingredientName=ingredientName;
+this.amount=amount;
+this.unit=unit;
+}
+
+public String getIngredientName (){
+	return ingredientName;
+	}
+
+public double getAmount (){
+	return amount;
+	}
+
+public String getUnit (){
+	return unit;
+	}
+
+public boolean equals(Ingredient i){
+	if (i.getIngredientName().equals(ingredientName) && 
+		i.getAmount()=amount && i.getUnit().equals(unit) ){
+		return true;
+		}
+	else return false;
+	}
+
+}
